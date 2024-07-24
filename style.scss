@@ -1,0 +1,880 @@
+@font-face {
+    font-family: GilroyBold;
+    src: url(./gilroy/Radomir\ Tinkov\ -\ Gilroy-ExtraBold.otf);
+}
+@font-face {
+    font-family: GilroyLight;
+    src: url(./gilroy/Radomir\ Tinkov\ -\ Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: Fredoka;
+    src: url(./static/Fredoka-Bold.ttf);
+}
+// font
+$Fredoka: Fredoka;
+$GilroyBold: GilroyBold;
+$GilroyLight: GilroyLight;
+// color
+$ColorDark :#374A3D;
+$ColorLight: #0CA941;
+// media
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$xlarge-screen: 1200px;
+
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+
+    img {
+        &:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .navbar {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        font-family: GilroyBold;
+
+        .side1 {
+            position: relative;
+
+            h1 {
+                position: absolute;
+                color: $ColorDark;
+                left: 225px;
+                top: 0;
+            }
+
+            img {
+                &:nth-child(1) {
+                    position: absolute;
+                    width: 120px;
+                    left: 10px;
+                    top: -10px;
+                }
+
+                &:nth-child(2) {
+                    position: absolute;
+                    left: 180px;
+                    top: 24px;
+                }
+            }
+        }
+
+        .side2 {
+            padding-right: 15%;
+            gap: 40px;
+            display: flex;
+            align-items: center;
+
+            p {
+                font-weight: 900;
+            }
+
+            button {
+                color: white;
+                background-color: #0CA941;
+                width: 80px;
+                height: 35px;
+                border-radius: 5px;
+                transition: .3s;
+                border: none;
+
+                &:hover {
+                    background-color: #367800;
+                    box-shadow: 1px 1px 5px rgb(57, 243, 57);
+                    color: #374A3D;
+                }
+            }
+        }
+    }
+
+    .main {
+        width: 100%;
+        height: 90%;
+        display: flex;
+
+        .mainSide1 {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            flex-direction: column;
+            position: relative;
+
+            .Line {
+                position: absolute;
+                width: 15%;
+                top: 62%;
+                left: 50%;
+            }
+
+            .cactus {
+                position: absolute;
+                top: 65%;
+                left: 80%;
+                width: 30%;
+            }
+
+            h1 {
+                font-size: 60px;
+                color: $ColorDark;
+                font-family: Fredoka;
+                padding-top: 60px;
+                padding-left: 180px;
+
+                span {
+                    color: $ColorLight;
+                }
+            }
+
+            p {
+                width: 60%;
+                padding-left: 180px;
+                font-family: GilroyLight;
+                color: gray;
+                margin-top: -20px;
+            }
+
+            button {
+                position: relative;
+                width: 130px;
+                height: 50px;
+                border-radius: 50%;
+                border: 2px solid $ColorLight;
+                background-color: transparent;
+                font-weight: bolder;
+                margin-left: 180px;
+                margin-top: 20px;
+
+                .buttonimage {
+                    position: absolute;
+                    top: 17px;
+                    left: 100px;
+                }
+            }
+        }
+
+        .mainSide2 {
+            width: 50%;
+            height: 100%;
+            position: relative;
+
+            .face {
+                position: absolute;
+                width: 75%;
+                left: 30px;
+                z-index: 1;
+            }
+
+            .Ellipse {
+                position: absolute;
+                z-index: 0;
+            }
+        }
+    }
+}
+
+
+
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+
+    .ellipse {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        z-index: 0;
+    }
+
+    .cards {
+        position: absolute;
+        background-color: white;
+        width: 80%;
+        margin-left: 10%;
+        height: 170px;
+        border-radius: 20px;
+        margin-top: 200px;
+        z-index: 3;
+        box-shadow: 10px 10px 30px #0ca94030;
+        display: flex;
+
+        img {
+            margin-left: -100px;
+            margin-top: -130px;
+            height: 350px;
+        }
+
+        .card1 {
+            width: 30%;
+            margin-left: -50px;
+
+            h3 {
+                width: 80%;
+                font-size: 25px;
+                font-family: $Fredoka;
+                color: $ColorDark;
+            }
+
+            p {
+                width: 85%;
+                color: $ColorDark;
+            }
+        }
+
+        .card2 {
+            width: 23%;
+            background-image: url(./assets/Vector.png);
+            background-repeat: no-repeat;
+            background-position: 50px 30px;
+            position: relative;
+
+            p {
+                width: 60%;
+                font-family: $GilroyBold;
+                color: $ColorDark;
+                position: absolute;
+                top: 90px;
+                left: 50px;
+                color: #678570;
+            }
+
+            h1 {
+                position: absolute;
+                top: 5px;
+                left: 55px;
+                font-size: 50px;
+                color: $ColorLight;
+                font-family: $GilroyBold;
+            }
+        }
+
+        .card3 {
+            width: 23%;
+            background-image: url(./assets/Vector.png);
+            background-repeat: no-repeat;
+            background-position: 50px 30px;
+            position: relative;
+
+            p {
+                width: 50%;
+                font-family: $GilroyBold;
+                color: #678570;
+                position: absolute;
+                top: 90px;
+                left: 50px;
+
+            }
+
+            h1 {
+                position: absolute;
+                top: 5px;
+                left: 55px;
+                font-size: 50px;
+                color: $ColorLight;
+                font-family: $GilroyBold;
+            }
+        }
+
+        .card4 {
+            width: 23%;
+            background-image: url(./assets/Vector.png);
+            background-repeat: no-repeat;
+            background-position: 50px 30px;
+            position: relative;
+
+            p {
+                width: 50%;
+                font-family: $GilroyBold;
+                color: #678570;
+                position: absolute;
+                top: 90px;
+                left: 50px;
+
+            }
+
+            h1 {
+                position: absolute;
+                top: 5px;
+                left: 55px;
+                font-size: 50px;
+                color: $ColorLight;
+                font-family: $GilroyBold;
+            }
+        }
+    }
+}
+
+.page3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    .side1 {
+        width: 50%;
+        height: 100%;
+        position: relative;
+
+        .Ellipse3 {
+            position: absolute;
+            top: -400px;
+            left: 0;
+            z-index: 0;
+        }
+
+        .woman {
+            position: absolute;
+            top: 0;
+            left: 100px;
+            z-index: 2;
+        }
+    }
+
+    .side2 {
+        width: 50%;
+        margin-left: 250px;
+        height: 100%;
+        position: relative;
+
+        h1 {
+            width: 50%;
+            font-family: $Fredoka;
+            color: $ColorDark;
+        }
+
+        p {
+            width: 60%;
+            font-family: $GilroyLight;
+            color: #678570;
+            font-size: 20px;
+        }
+
+        button {
+            position: relative;
+            width: 130px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid $ColorLight;
+            background-color: transparent;
+            font-weight: bolder;
+
+        }
+
+        .buttonimage {
+            position: absolute;
+            top: 17px;
+            left: 100px;
+        }
+
+        .Line {
+            position: absolute;
+            width: 100px;
+            top: 280px;
+            left: 180px;
+        }
+    }
+}
+
+.page4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    .side1 {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        padding: 5%;
+
+        h1 {
+            margin: 0px 0px 0px 30px;
+            font-family: $Fredoka;
+            font-size: 50px;
+            color: $ColorDark;
+        }
+
+        p {
+            width: 50%;
+            font-size: 20px;
+            font-family: $GilroyLight;
+            color: #678570;
+            margin-left: 30px;
+        }
+
+        button {
+            position: absolute;
+            bottom: 320px;
+            left: 120px;
+            width: 150px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid $ColorLight;
+            background-color: transparent;
+            font-weight: bolder;
+        }
+
+        .line {
+            width: 15%;
+            position: absolute;
+            bottom: 300px;
+            right: 380px;
+            width: 13%;
+        }
+    }
+
+    .side2 {
+        width: 50%;
+        height: 100%;
+
+        .circle1 {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-radius: 50%;
+
+            .Ellipse1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+            }
+
+            .Ellipse2 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+            }
+
+            .Ellipse3 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 50%;
+            }
+        }
+
+        .circle2 {
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            margin-top: -80%;
+            margin-left: 50px;
+            position: relative;
+
+            .vector1 {
+                position: absolute;
+                top: 0;
+                left: 100px;
+            }
+
+            .vector2 {
+                position: absolute;
+                bottom: 0;
+                left: 100px;
+            }
+
+            .vector3 {
+                position: absolute;
+                bottom: 180px;
+                left: 400px;
+            }
+        }
+
+        .cards {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            margin-top: -58%;
+            position: relative;
+
+            .card1 {
+                width: 40%;
+                height: 45%;
+                position: absolute;
+                top: -50px;
+                left: 250px;
+                background-color: #ffffff;
+                border-radius: 20px;
+                box-shadow: -5px -5px 30px #0ca94033;
+
+                img {
+                    &:nth-child(1) {
+                        margin-top: 20px;
+                        margin-left: 70px;
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        top: 40px;
+                        right: 80px;
+                    }
+                }
+
+                h3 {
+                    margin-left: 60px;
+                    color: #374A3D;
+                    font-family: $Fredoka;
+                }
+
+                p {
+                    width: 80%;
+                    color: #678570;
+                    font-family: $GilroyLight;
+                    margin-left: 20px;
+                    text-align: center;
+                }
+            }
+
+            .card2 {
+                width: 40%;
+                height: 45%;
+                position: absolute;
+                top: 100px;
+                left: -50px;
+                background-color: #ffffff;
+                border-radius: 20px;
+                box-shadow: -5px -5px 30px #0ca94033;
+
+                img {
+                    &:nth-child(1) {
+                        margin-top: 20px;
+                        margin-left: 80px;
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        top: 20px;
+                        right: 98px;
+                    }
+                }
+
+                h3 {
+                    margin-left: 80px;
+                    color: #374A3D;
+                    font-family: $Fredoka;
+                }
+
+                p {
+                    width: 80%;
+                    color: #678570;
+                    font-family: $GilroyLight;
+                    margin-left: 20px;
+                    text-align: center;
+                }
+            }
+
+            .card3 {
+                width: 43%;
+                height: 45%;
+                position: absolute;
+                bottom: 40px;
+                left: 250px;
+                background-color: #ffffff;
+                border-radius: 20px;
+
+                img {
+                    &:nth-child(1) {
+                        margin-top: 20px;
+                        margin-left: 80px;
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        top: 25px;
+                        right: 115px;
+                    }
+                }
+
+                h3 {
+                    margin-left: 80px;
+                    color: #374A3D;
+                    font-family: $Fredoka;
+                }
+
+                p {
+                    width: 80%;
+                    color: #678570;
+                    font-family: $GilroyLight;
+                    margin-left: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.page5 {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+        margin-top: 20%;
+        color: $ColorDark;
+        font-family: $Fredoka;
+    }
+
+    p {
+        font-family: $GilroyLight;
+        font-size: 20px;
+        margin: auto;
+        width: 50%;
+        color: #678570;
+    }
+
+    .cards {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        margin-top: 70px;
+
+        .card {
+            width: 28%;
+            padding-top: 20px;
+            height: 60%;
+            border: 2px solid rgba(128, 128, 128, 0.438);
+            border-radius: 20px;
+
+            h3 {
+                font-family: $Fredoka;
+                color: $ColorDark;
+            }
+
+            .text {
+                display: flex;
+                width: 50%;
+                margin: auto;
+            }
+
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+
+                .side1 {
+                    margin-top: 20px;
+                    width: 20%;
+
+                    h5 {
+                        margin-top: -1px;
+                        font-family: $GilroyBold;
+                        color: $ColorLight;
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-family: $GilroyLight;
+                        color: #678570;
+                    }
+                }
+
+                button {
+                    width: 120px;
+                    height: 40px;
+                    border-radius: 10px;
+                    font-size: 15px;
+                    border: 2px solid rgba(128, 128, 128, 0.399);
+                    background-color: transparent;
+                    color: #0CA941;
+                    margin: 25px;
+                }
+            }
+        }
+    }
+}
+
+.page6 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 200px;
+
+    img {
+        z-index: 1;
+
+        &:nth-child(1) {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        &:nth-child(2) {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .card {
+        position: absolute;
+        z-index: -1;
+        background-color: #F7F8F7;
+        width: 90%;
+        height: 75%;
+        margin-top: 20px;
+        margin-left: 5%;
+        border-radius: 20px;
+
+        h1 {
+            font-family: $Fredoka;
+            color: $ColorDark;
+            margin: 5% 30%;
+        }
+
+        p {
+            font-family: $GilroyLight;
+            color: #678570;
+            width: 50%;
+            text-align: center;
+            font-size: 18px;
+            margin: 0% 25%;
+        }
+
+        input {
+            width: 30%;
+            height: 10%;
+            margin: 5% 0px 0px 33%;
+            border: 1px solid $ColorLight;
+            border-radius: 5px;
+
+        }
+
+        button {
+            width: 10%;
+            height: 11%;
+            border-radius: 5px;
+            background-color: $ColorLight;
+            color: white;
+            border: none;
+            margin-left: -100px;
+        }
+    }
+}
+
+.footer1 {
+    width: 90%;
+    margin-left: 5%;
+    height: 40vh;
+    display: flex;
+    .card1{
+        width: 25%;
+        height: 100%;
+        padding: 3%;
+        span{
+            img{
+                height: 40px;
+            }
+            display: flex;
+            align-items: center;
+            gap: 5%;
+            h3{
+                font-family: $GilroyBold;
+                color: $ColorDark;
+                font-size: 20px;
+            }
+        }
+        p{
+            color: #678570;
+            font-family: $GilroyLight;
+        }
+        
+    }
+    .card2{
+        width: 25%;
+        height: 100%;
+        padding: 3%;
+        h3{
+            font-family: $GilroyBold;
+            color: $ColorDark;
+            font-size: 20px;
+        }
+             p{
+            color: #678570;
+            font-family: $GilroyLight;
+        }
+
+    }
+    .card3{
+        width: 25%;
+        height: 100%;
+        padding: 3%;
+        h3{
+            font-family: $GilroyBold;
+            color: $ColorDark;
+            font-size: 20px;
+        }
+             p{
+            color: #678570;
+            font-family: $GilroyLight;
+        }
+
+    }
+    .card4{
+        width: 25%;
+        height: 100%;
+        padding: 3%;
+        h3{
+            font-family: $GilroyBold;
+            color: $ColorDark;
+            font-size: 20px;
+        }
+             p{
+            color: #678570;
+            font-family: $GilroyLight;
+        }
+
+    }
+}
+hr{
+    width: 90%;
+    height: 1px;
+    margin: 6% 5% 0% 5%;
+    background-color: red;
+}
+.footer2{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap:wrap ;
+        .ellipseLeft{
+            position: absolute;
+            right: 0;
+            bottom: -270%;
+        }
+        .ellipseRight {
+            position: absolute;
+            left: 0;
+            bottom: -370%;
+        }
+        .flowers{
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            gap:10%;
+            img{
+                margin-left: 35px;
+                height: 100%;
+            }
+
+        }
+}
